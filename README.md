@@ -99,6 +99,8 @@ nodemon index.js
      -  my_first_app.iml
      -  pubspec.lock
      -  pubspec.yaml
+  - /Image
+     - kapvia.png
   - /Backend
     - /model
       - data.model.js
