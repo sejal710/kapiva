@@ -22,7 +22,7 @@ To clone the project, follow these steps:
 git clone https://github.com/sejal710/kapiva.git
 ```
  
-#### Frontend
+### Frontend
 
 ##### Navigate to the project directory:
 ```shell
@@ -45,7 +45,7 @@ This command will download and install all the required packages and dependencie
 flutter run
 ```
 
-#### Backend
+### Backend
     
 ##### Navigate to the project directory:
 ```shell
