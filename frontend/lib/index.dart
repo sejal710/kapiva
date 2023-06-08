@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:frontend/color.dart';
 import 'package:http/http.dart' as http;
@@ -40,6 +39,9 @@ class _IndexPageState extends State<IndexPage> {
       });
     }
   }
+  Future<void> refreshData() async {
+    await fetchUser();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +49,10 @@ class _IndexPageState extends State<IndexPage> {
       appBar: AppBar(
         title: Text("Listing Users"),
       ),
-      body: getBody(),
+      body: RefreshIndicator(
+        onRefresh: refreshData,
+        child: getBody(),
+      ),
     );
   }
 
@@ -124,6 +129,4 @@ class _IndexPageState extends State<IndexPage> {
       ),
     );
   }
-
-
 }
