@@ -74,6 +74,10 @@ nodemon index.js
 /data - Create a new post
 ```
 
+## Usage
+<img src='./Image/kapvia.png'/>
+
+
 ## Folder Stucture
 - /kapiva
   - /frontend
