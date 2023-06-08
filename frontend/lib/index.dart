@@ -40,6 +40,10 @@ class _IndexPageState extends State<IndexPage> {
     }
   }
   Future<void> refreshData() async {
+    setState(() {
+      isLoading = true;
+    });
+    await Future.delayed(Duration(seconds: 5)); //Delayed of 5 sec
     await fetchUser();
   }
 
